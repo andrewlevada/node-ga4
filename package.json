@@ -1,7 +1,7 @@
 {
   "name": "node-ga4",
   "version": "0.1.0",
-  "description": "Make requests to goggle analytics 4 in server environment",
+  "description": "Makes requests to Goggle Analytics 4 from server environment possible",
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
