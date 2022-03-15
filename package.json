@@ -1,0 +1,27 @@
+{
+  "name": "node-ga4",
+  "version": "0.1.0",
+  "description": "Make requests to goggle analytics 4 in server environment",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Andrew Levada <levada.andrew@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewlevada/node-ga4.git"
+  },
+  "license": "Unlicense",
+  "keywords": [
+    "ga4",
+    "google-analytics",
+    "analytics",
+    "telegram"
+  ],
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "typescript": "^4.6.2"
+  }
+}

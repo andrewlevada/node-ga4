@@ -1,0 +1,18 @@
+{
+  "include": [ "src/**/*" ],
+  "exclude": [ "node_modules", "lib" ],
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "lib",
+    "lib": ["es2019", "dom"],
+    "declarationMap": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "strict": true,
+    "esModuleInterop": true
+  }
+}
