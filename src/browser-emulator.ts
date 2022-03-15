@@ -1,6 +1,5 @@
 import { JSDOM, DOMWindow, CookieJar } from "jsdom";
 import https from "https";
-import { Event, PageViewEvent, UserPropertyUpdated } from "./analytics-service";
 import { getBrowserSession, getSessionsNumber,
   getStaleQueueUserId, GtagFunction,
   popFromEmulationRequestsQueue,
@@ -8,7 +7,23 @@ import { getBrowserSession, getSessionsNumber,
   removeBrowserSession,
   setBrowserSession } from "./emulator-sessions-storage";
 import { sendBeacon } from "./send-beacon";
-import { config } from "./index";
+import { config } from "./config";
+
+export interface PageViewEvent {
+  userId: string;
+  url: string | null;
+}
+
+export interface Event {
+  userId: string;
+  name: string;
+  params?: any;
+}
+
+export interface UserPropertyUpdated {
+  userId: string;
+  properties: Record<string, any>;
+}
 
 const debugLog = false;
 

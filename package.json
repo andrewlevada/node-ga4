@@ -14,6 +14,9 @@
     "url": "https://github.com/andrewlevada/node-ga4.git"
   },
   "license": "Unlicense",
+  "exports": {
+    ".": "./lib/export.js"
+  },
   "keywords": [
     "ga4",
     "google-analytics",

@@ -1,21 +1,5 @@
-import { config } from ".";
+import { config } from "./config";
 import { emulatePageView, emulateSendEvent, emulateUserPropertiesUpdate } from "./browser-emulator";
-
-export interface PageViewEvent {
-  userId: string;
-  url: string | null;
-}
-
-export interface Event {
-  userId: string;
-  name: string;
-  params?: any;
-}
-
-export interface UserPropertyUpdated {
-  userId: string;
-  properties: Record<string, any>;
-}
 
 export function logPageView(userId: string, path: string): Promise<void> {
   if (config().ignoreIds.includes(userId)) return Promise.resolve();

@@ -1,5 +1,5 @@
 import { CookieJar, DOMWindow } from "jsdom";
-import { PageViewEvent } from "./analytics-service";
+import { PageViewEvent } from "./browser-emulator";
 
 export type GtagFunction = (action: string, value: string, params?: any, callback?: ()=> void)=> void;
 
